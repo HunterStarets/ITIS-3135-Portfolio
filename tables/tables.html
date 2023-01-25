@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>ITIS 3135 - Hunter Starets</h1>
+        </header>
+        <main>
+            <h2>Activity #2 - HTML Tables</h2>
+            <h3>My Tabular Data</h3>
+            <ol>
+                <li>D.I. von Briesen  dvonbri1@uncc.edu 1</li>
+                <li>Esam Abdullah eabdullah@gmail.com 31</li>
+                <li>Medina Gomez gomez_med8@yahoo.com 3</li>
+                <li>Seth Rogan sethrogan@gmail.com 22</li>
+                <li>James Franco jfranco@uncc.edu 21</li>
+                <li>Mac Miller mmiller@uncc.edu 4</li>
+                <li>Mac Demarco mdemarco@uncc.edu 2</li>
+                <li>Theo Von tvon@uncc.edu 43</li>
+                <li>Brad Pitt bpitt@uncc.edu 1</li>
+                <li>Jonah Hill jhill@uncc.edu 3</li>
+            </ol>
+            <h3>Employee Data in Simple Table</h3>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Years of Service</th>
+                </tr>
+                <tr>
+                    <td>D.I. von Briesen</td>
+                    <td>dvonbri1@uncc.edu</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Esam Abdullah</td>
+                    <td>eabdullah@gmail.com</td>
+                    <td>31</td>
+                </tr>
+                <tr>
+                    <td>Medina Gomez</td>
+                    <td>gomez_med8@yahoo.com</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Seth Rogan</td>
+                    <td>sethrogan@gmail.com</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>James Franco</td>
+                    <td>jfranco@uncc.edu</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>Mac Miller</td>
+                    <td>mmiller@uncc.edu</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Mac Demarco</td>
+                    <td>mdemarco@uncc.edu</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Theo Von</td>
+                    <td>tvon@uncc.edu</td>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <td>Brad Pitt</td>
+                    <td>bpitt@uncc.edu</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Jonah Hill</td>
+                    <td>jhill@uncc.edu</td>
+                    <td>3</td>
+                </tr>
+            </table>
+            <figure>
+                <figcaption>Employee Information</figcaption>
+                <table>
+                    <tr>
+                        <th id="category">Category</th>
+                        <th id="name">Name</th>
+                        <th id="email">Email</th>
+                        <th id="years">Years of Service</th>
+                        <th id="salary">Salary</th>
+                    </tr>
+                    <tr>
+                        <td headers="category">Marketing</td>
+                        <td headers="name">D.I. von Briesen</td>
+                        <td headers="email">dvonbri1@uncc.edu</td>
+                        <td headers="years">1</td>
+                        <td headers="salary">$3000</td>
+                    </tr>
+                    <tr>
+                        <td headers="category" rowspan="2">Sales</td>
+                        <td headers="name">Esam Abdullah</td>
+                        <td headers="email">eabdullah@gmail.com</td>
+                        <td headers="years">31</td>
+                        <td headers="salary">$5000</td>
+                    </tr>
+                    <tr>
+                        <td headers="name">Medina Gomez</td>
+                        <td headers="email">gomez_med8@yahoo.com</td>
+                        <td headers="years">3</td>
+                        <td headers="salary">$10000</td>
+                    </tr>
+                    <tr>
+                        <td headers="category">Human Resources</td>
+                        <td headers="name">Seth Rogan</td>
+                        <td headers="email">sethrogan@gmail.com</td>
+                        <td headers="years">22</td>
+                        <td headers="salary">$2100</td>
+                    </tr>
+                    <tr>
+                        <td headers="category">IT/Tech Support</td>
+                        <td headers="name">James Franco</td>
+                        <td headers="email">jfranco@uncc.edu</td>
+                        <td headers="years">21</td>
+                        <td headers="salary">$2200</td>
+                    </tr>
+                    <tr>
+                        <td headers="category" rowspan="2">Legal</td>
+                        <td headers="name">Mac Miller</td>
+                        <td headers="email">mmiller@uncc.edu</td>
+                        <td headers="years">4</td>
+                        <td headers="salary">$3500</td>
+                    </tr>
+                    <tr>
+                        <td headers="name">Mac Demarco</td>
+                        <td headers="email">mdemarco@uncc.edu</td>
+                        <td headers="years">2</td>
+                        <td headers="salary">$3000</td>
+                    </tr>
+                    <tr>
+                        <td headers="category">Research and Development</td>
+                        <td headers="name">Theo Von</td>
+                        <td headers="email">tvon@uncc.edu</td>
+                        <td headers="years">43</td>
+                        <td headers="salary">$7000</td>
+                    </tr>
+                    <tr>
+                        <td headers="category" rowspan="2">Customer Service</td>
+                        <td headers="name">Brad Pitt</td>
+                        <td headers="email">bpitt@uncc.edu</td>
+                        <td headers="years">1</td>
+                        <td headers="salary">$1000</td>
+                    </tr>
+                    <tr>
+                        <td headers="name">Jonah Hill</td>
+                        <td headers="email">jhill@uncc.edu</td>
+                        <td headers="years">3</td>
+                        <td headers="salary">$1000</td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">Total Years of Service/Salary</th>
+                        <td>131</td>
+                        <td>$37800</td>
+                    </tr>
+                </table>
+            </figure>
+        </main>
+        <footer>
+            <p>Copyright © 2022 Hunter Starets</p>
+        </footer>
+    </body>
+</html>
