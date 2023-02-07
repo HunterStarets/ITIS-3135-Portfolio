@@ -1,0 +1,95 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+}
+
+h3,
+h4 {
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  margin-right: 20px;
+  font-weight: 400;
+  color: #333;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer p {
+  font-size: 12px;
+  color: #999;
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+figcaption {
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+  text-align: center;
+}
+
+.tables {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 1000px;
+}
+main h2 {
+  text-align: left;
+  margin-left: 0;
+}
+main p {
+  text-align: left;
+  margin-left: 0;
+}
+
+footer a {
+  color: #216869;
+  text-decoration: none;
+}
