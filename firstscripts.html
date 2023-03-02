@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ITIS 3135 | Hunter Starets's Homicidal Seal | First Scripts</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/firstscripts.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>ITIS 3135 | Hunter Starets's Homicidal Seal</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="tables.html">Tables</a>
+        <a href="form.html">Form</a>
+        <a href="website_evaluations.html">Website Evaluations</a>
+        <a href="firstscripts.html">First Scripts</a>
+      </nav>
+    </header>
+    <main>
+      <h2>First Scripts</h2>
+      <h3 id="time"></h3>
+      <script>
+        function getTime() {
+          var current = new Date();
+          var day = current.toLocaleDateString("en-US", { weekday: "long" });
+          var time = current.toLocaleTimeString("en-US", {
+            hour: "numeric",
+            minute: "numeric",
+            hour12: true,
+          });
+          var date = current.toLocaleTimeString("en-US", {
+            month: "long",
+            day: "numeric",
+            year: "numeric",
+          });
+          var timeString = time + " " + day + " " + date;
+          document.getElementById("time").innerHTML = timeString;
+        }
+        setInterval(getTime, 1000);
+      </script>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+        <label for="feeling">How are you feeling:</label>
+        <input type="text" id="feeling" />
+        <button type="button" onclick="setGreeting()">Submit</button>
+      </form>
+      <h3 id="greeting"></h3>
+      <script>
+        function setGreeting() {
+          var name = document.getElementById("name").value;
+          var feeling = document.getElementById("feeling").value;
+          var output =
+            "Starets LLC welcomes you, " +
+            name +
+            "! We're glad you are doing " +
+            feeling +
+            "!";
+          document.getElementById("greeting").innerHTML = output;
+        }
+      </script>
+
+      <form id="scripts">
+        <button type="button" onclick="generateSealType()">
+          Generate Random Seal Type
+        </button>
+        <button type="button" onclick="playRandomSealSound()">
+          Play Random Seal Sound
+        </button>
+        <button type="button" onclick="suggestSealName()">
+          Suggest a Seal Name
+        </button>
+        <button type="button" onclick="generateSealFact()">
+          Generate Seal Fact
+        </button>
+        <button type="button" onclick="generateSealGif()">
+          Generate Seal GIF
+        </button>
+      </form>
+
+      <div class="functionOutputs">
+        <div id="textOutput" class="output"></div>
+        <img id="imageOutput" src="" alt="" style="display: none" />
+      </div>
+      <script>
+        function generateSealType() {
+          const types = [
+            "Harbor seal",
+            "Grey seal",
+            "Ringed seal",
+            "Bearded seal",
+            "Leopard seal",
+            "Elephant seal",
+            "Hooded seal",
+            "Weddell seal",
+            "Mediterranean monk seal",
+            "Hawaiian monk seal",
+          ];
+          var randomIndex = Math.floor(Math.random() * types.length);
+          var output = types[randomIndex];
+          document.getElementById("textOutput").innerHTML =
+            "<b>Random Seal Type: </b>" + output;
+          document.getElementById("imageOutput").src = "";
+          imageOutput.style.display = "none";
+        }
+        function playRandomSealSound() {
+          const sounds = [
+            "seal-sound-1.wav",
+            "seal-sound-2.wav",
+            "seal-sound-3.wav",
+            "seal-sound-4.wav",
+          ];
+          var randomIndex = Math.floor(Math.random() * sounds.length);
+          var sound = new Audio("sounds/" + sounds[randomIndex]);
+          sound.play();
+          document.getElementById("textOutput").innerHTML =
+            "<b>Playing: </b>Seal Sound #" + (randomIndex + 1);
+          document.getElementById("imageOutput").src = "";
+          imageOutput.style.display = "none";
+        }
+        function suggestSealName() {
+          const names = [
+            "Bubbles",
+            "Coral",
+            "Finn",
+            "Kiki",
+            "Noodle",
+            "Orca",
+            "Pebbles",
+            "Splash",
+            "Tiki",
+            "Wally",
+          ];
+          var randomIndex = Math.floor(Math.random() * names.length);
+          var output = names[randomIndex];
+          document.getElementById("textOutput").innerHTML =
+            "<b>You could name your seal: </b>" + output;
+          document.getElementById("imageOutput").src = "";
+          imageOutput.style.display = "none";
+        }
+        function generateSealFact() {
+          const facts = [
+            "Seals are warm-blooded, air-breathing marine mammals.",
+            "The largest seal is the southern elephant seal, which can weigh over 8,800 pounds.",
+            "Seals have a layer of blubber under their skin that helps keep them warm in cold water.",
+            "The lifespan of a seal can range from 25 to 50 years, depending on the species.",
+            "Seals can hold their breath for up to 2 hours underwater.",
+            "Seals have excellent underwater vision and hearing.",
+            "Seals are carnivores and eat a variety of fish, squid, and shellfish.",
+            "Seals are excellent swimmers and can reach speeds of up to 20 miles per hour.",
+            "Seals use a variety of vocalizations to communicate with each other.",
+            "Some species of seals can travel thousands of miles each year during their migrations.",
+          ];
+          var randomIndex = Math.floor(Math.random() * facts.length);
+          var output = facts[randomIndex];
+          document.getElementById("textOutput").innerHTML =
+            "<b>Random Seal Fact: </b>" + output;
+          document.getElementById("imageOutput").src = "";
+          imageOutput.style.display = "none";
+        }
+        function generateSealGif() {
+          const gifs = [
+            "seal-gif-1.gif",
+            "seal-gif-2.gif",
+            "seal-gif-3.gif",
+            "seal-gif-4.gif",
+          ];
+          var randomIndex = Math.floor(Math.random() * gifs.length);
+          var source = "images/" + gifs[randomIndex];
+          document.getElementById("textOutput").innerHTML = "";
+          document.getElementById("imageOutput").src = source;
+          imageOutput.style.display = "block";
+        }
+      </script>
+    </main>
+    <footer>
+      <p>Designed by <a href="starets.com/">Starets LLC</a> © 2023</p>
+    </footer>
+  </body>
+</html>
