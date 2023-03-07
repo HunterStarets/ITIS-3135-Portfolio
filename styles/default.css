@@ -86,3 +86,14 @@ footer a {
   color: #216869;
   text-decoration: none;
 }
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 10px;
+}
