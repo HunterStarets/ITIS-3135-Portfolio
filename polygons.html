@@ -35,41 +35,46 @@
       </form>
       <div id="output">
         <h3 id="outputHeader">Welcome to the Polygon Calculator</h3>
-        <p id ="outputParagraph">Please enter the number of sides of your polygon in the input field above (between 1 and 10) and click Submit to get started.
-
-
-        </b></p>
+        <p id="outputParagraph">
+          Please enter the number of sides of your polygon in the input field
+          above (between 1 and 10) and click Submit to get started.
+        </p>
       </div>
     </main>
     <footer>
+      <script>
+        function validateHTML() {
+          var currentURL = encodeURIComponent(window.location.href);
+          var validatorURL = "https://validator.w3.org/nu/?doc=" + currentURL;
+          window.open(validatorURL, "_blank");
+        }
+        function validateCSS() {
+          var currentURL = encodeURIComponent(window.location.href);
+          var validatorURL =
+            "https://jigsaw.w3.org/css-validator/validator?uri=" +
+            currentURL +
+            "&profile=css3";
+          window.open(validatorURL, "_blank");
+        }
+      </script>
       <div>
-        <p>
-          <a href="https://jigsaw.w3.org/css-validator/check/referer">
-            <img
-              style="border: 0; width: 88px; height: 31px"
-              src="https://jigsaw.w3.org/css-validator/images/vcss"
-              alt="Valid CSS!"
-            />
-          </a>
-        </p>
-        <p>
-          <a href="https://jigsaw.w3.org/css-validator/check/referer">
-            <img
-              style="border: 0; width: 88px; height: 31px"
-              src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
-              alt="Valid CSS!"
-            />
-          </a>
-        </p>
+        <a href="#" onclick="validateHTML()">
+          <img
+            src="https://www.w3.org/Icons/valid-html401"
+            alt="Valid HTML"
+            height="31"
+            width="88"
+          />
+        </a>
+        <a href="#" onclick="validateCSS()">
+          <img
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS"
+            height="31"
+            width="88"
+          />
+        </a>
       </div>
-      <nav class="links" aria-label="Footer Links">
-        <a href="https://webpages.charlotte.edu/hstarets/" class="links">Personal Page</a>
-        <a href="https://github.com/HunterStarets" class="links">Github</a>
-        <a href="https://hunterstarets.github.io" class="links"></a>
-        <a href="https://www.freecodecamp.org/HunterStarets" class="links">FreeCodeCamp</a>
-        <a href="https://www.codecademy.com/profiles/HunterStarets" class="links">CodeCademy</a>
-        <a href="https://www.linkedin.com/in/hunterstarets">LinkedIn</a>
-      </nav>
       <p>Designed by <a href="starets.com/">Starets LLC</a> © 2023</p>
     </footer>
   </body>
