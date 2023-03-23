@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-  <title>ITIS 3135 | Hunter Starets's Homicidal Seal | Polygons</title>
+  <title>ITIS 3135 | Hunter Starets's Homicidal Seal | Home</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles/default.css" />
-  <link rel="stylesheet" href="styles/polygons.css" />
-  <script src="scripts/polygons.js"></script>
+  <link rel="stylesheet" href="styles/arrays.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <script src="scripts/arrays.js"></script>
 </head>
 
 <body>
@@ -40,18 +40,32 @@
     </div>
   </header>
   <main>
-    <h2>Polygons</h2>
-    <form>
-      <label for="sidesInput">The Homicidal Seal would like your number:</label>
-      <input type="number" id="sidesInput" min="1" max="10" step="1" />
-      <button type="button" onclick="submitButton()">Submit</button>
-    </form>
+    <label for="employee">Employee:</label>
+    <select id="employee">
+      <option value=""></option>
+      <option value="John Doe">John Doe</option>
+      <option value="Jane Smith">Jane Smith</option>
+      <option value="Bob Johnson">Bob Johnson</option>
+      <option value="Sarah Lee">Sarah Lee</option>
+      <option value="Michael Chen">Michael Chen</option>
+      <option value="Jennifer Davis">Jennifer Davis</option>
+      <option value="William Jackson">William Jackson</option>
+      <option value="Emily Kim">Emily Kim</option>
+    </select>
+    <label for="salary">Salary:</label>
+    <input type="text" id="salary" />
+    <button onclick="addSalary()">Add Salary</button>
+    <button onclick="displayResults()">Display Results</button>
+    <button onclick="displaySalary()">Display Salary</button>
     <div id="output">
-      <h3 id="outputHeader">Welcome to the Polygon Calculator</h3>
-      <p id="outputParagraph">
-        Please enter the number of sides of your polygon in the input field
-        above (between 1 and 10) and click Submit to get started.
-      </p>
+      <h3 id="results-header">
+        <b>Welcome to our salary table!</b>
+      </h3>
+      <div id="results-body">
+        Use the dropdown menu to select an employee and enter their salary to
+        get started.
+      </div>
+      <table id="results-table"></table>
     </div>
   </main>
   <footer>

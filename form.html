@@ -1,126 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>ITIS 3135 | Hunter Starets's Homicidal Seal | Form</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/form.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <h1>ITIS 3135 | Hunter Starets's Homicidal Seal</h1>
-      <nav aria-label="Header Links">
-        <a href="index.html">Home</a>
-        <a href="tables.html">Tables</a>
-        <a href="form.html">Form</a>
-        <a href="website_evaluations.html">Website Evaluations</a>
-        <a href="firstscripts.html">First Scripts</a>
-        <a href="polygons.html">Polygons</a>
-      </nav>
-    </header>
-    <main>
-      <h2>Starets LLC Information Form</h2>
-      <p>Please fill in the following form to the best of your ability</p>
-      <form action="#">
-        <div class="name">
-          <label for="name">Name:</label>
-          <input id="name" required placeholder="Enter your full name" />
-        </div>
 
-        <div class="phone">
-          <label for="phone">Phone Number:</label>
-          <input
-            id="phone"
-            pattern="[0-9]*"
-            title="Please input a valid phone number"
-            required
-            placeholder="Enter your phone number"
-          />
-        </div>
+<head>
+  <title>ITIS 3135 | Hunter Starets's Homicidal Seal | Form</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/default.css" />
+  <link rel="stylesheet" href="styles/form.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
 
-        <div class="email">
-          <label for="email">Email Address:</label>
-          <input id="email" required placeholder="Enter your email address" />
-        </div>
-
-        <div class="referred">
-          <label>How did you hear about us?</label>
-          <div>
-            <input type="checkbox" id="option1" value="Friend" />
-            <label for="option1">Friend</label>
-
-            <input type="checkbox" id="option2" value="Ad" />
-            <label for="option2">Ad</label>
-
-            <input type="checkbox" id="option3" value="Search" />
-            <label for="option3">Search</label>
-          </div>
-        </div>
-
-        <div class="returning">
-          <label>Are you a returning customer?</label>
-          <div>
-            <input type="radio" id="yes" name="returning" />
-            <label for="yes">Yes</label>
-            <input type="radio" id="no" name="returning" />
-            <label for="no">No</label>
-          </div>
-        </div>
-
-        <div class="product">
-          <label for="product">Select a product</label>
-          <select id="product" required>
-            <option value="">Pick an option</option>
-            <option>Product 2</option>
-            <option>Product 3</option>
-          </select>
-        </div>
-
-        <div class="options">
-          <button type="reset">Reset</button>
-          <button type="submit">Submit</button>
-        </div>
-      </form>
-    </main>
-    <footer>
-      <script>
-        function validateHTML() {
-          var currentURL = encodeURIComponent(window.location.href);
-          var validatorURL = "https://validator.w3.org/nu/?doc=" + currentURL;
-          window.open(validatorURL, "_blank");
-        }
-        function validateCSS() {
-          var currentURL = encodeURIComponent(window.location.href);
-          var validatorURL =
-            "https://jigsaw.w3.org/css-validator/validator?uri=" +
-            currentURL +
-            "&profile=css3";
-          window.open(validatorURL, "_blank");
-        }
-      </script>
-      <div>
-        <a href="#" onclick="validateHTML()">
-          <img
-            src="https://www.w3.org/Icons/valid-html401"
-            alt="Valid HTML"
-            height="31"
-            width="88"
-          />
-        </a>
-        <a href="#" onclick="validateCSS()">
-          <img
-            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
-            alt="Valid CSS"
-            height="31"
-            width="88"
-          />
-        </a>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <h1>ITIS 3135 | Hunter Starets's Homicidal Seal</h1>
       </div>
-      <p>Designed by <a href="starets.com/">Starets LLC</a> © 2023</p>
-    </footer>
-  </body>
+      <div id="navigation-bar">
+        <nav id="header-top-nav" aria-label="header-top-nav">
+          <a href="index.html">Home</a>
+          <a href="contract.html">Contract</a>
+          <a href="tables.html">Tables</a>
+          <a href="form.html">Form</a>
+          <a href="website_evaluations.html">Website Evaluations</a>
+          <a href="firstscripts.html">First Scripts</a>
+          <a href="polygons.html">Polygons</a>
+          <a href="calculator_try.html">Calculator Try</a>
+          <a href="calculator_fcc.html">Calculator FCC</a>
+          <a href="arrays.html">Arrays</a>
+          <a href="slideshow.html">Slideshow</a>
+          <a href="project1.html">Project 1</a>
+        </nav>
+        <nav id="header-bot-nav" aria-label="header-bot-nav">
+          <a href="">CRAPPYWebPAGE</a>
+          <a href="Exercise/Starets-Activity_Accessibility.html">Accessibility</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <h2>Starets LLC Information Form</h2>
+    <p>Please fill in the following form to the best of your ability</p>
+    <form action="#">
+      <div class="name">
+        <label for="name">Name:</label>
+        <input id="name" required placeholder="Enter your full name" />
+      </div>
+
+      <div class="phone">
+        <label for="phone">Phone Number:</label>
+        <input id="phone" pattern="[0-9]*" title="Please input a valid phone number" required
+          placeholder="Enter your phone number" />
+      </div>
+
+      <div class="email">
+        <label for="email">Email Address:</label>
+        <input id="email" required placeholder="Enter your email address" />
+      </div>
+
+      <div class="referred">
+        <label>How did you hear about us?</label>
+        <div>
+          <input type="checkbox" id="option1" value="Friend" />
+          <label for="option1">Friend</label>
+
+          <input type="checkbox" id="option2" value="Ad" />
+          <label for="option2">Ad</label>
+
+          <input type="checkbox" id="option3" value="Search" />
+          <label for="option3">Search</label>
+        </div>
+      </div>
+
+      <div class="returning">
+        <label>Are you a returning customer?</label>
+        <div>
+          <input type="radio" id="yes" name="returning" />
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" name="returning" />
+          <label for="no">No</label>
+        </div>
+      </div>
+
+      <div class="product">
+        <label for="product">Select a product</label>
+        <select id="product" required>
+          <option value="">Pick an option</option>
+          <option>Product 2</option>
+          <option>Product 3</option>
+        </select>
+      </div>
+
+      <div class="options">
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <script>
+      function validateHTML() {
+        var currentURL = encodeURIComponent(window.location.href);
+        var validatorURL = "https://validator.w3.org/nu/?doc=" + currentURL;
+        window.open(validatorURL, "_blank");
+      }
+      function validateCSS() {
+        var currentURL = encodeURIComponent(window.location.href);
+        var validatorURL =
+          "https://jigsaw.w3.org/css-validator/validator?uri=" +
+          currentURL +
+          "&profile=css3";
+        window.open(validatorURL, "_blank");
+      }
+    </script>
+    <div>
+      <a href="#" onclick="validateHTML()">
+        <img src="https://www.w3.org/Icons/valid-html401" alt="Valid HTML" height="31" width="88" />
+      </a>
+      <a href="#" onclick="validateCSS()">
+        <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS" height="31" width="88" />
+      </a>
+    </div>
+    <p>Designed by <a href="starets.com/">Starets LLC</a> © 2023</p>
+  </footer>
+</body>
+
 </html>

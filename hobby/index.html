@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap" rel="stylesheet">
+    <title>Powerlifting | Home</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: block;
+        }
+
+        /* Set font and background color */
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            background-color: #eee0cb;
+        }
+
+        /* Add padding to the top and bottom of the header */
+        header {
+            padding: 20px;
+        }
+
+        /* Style the h1 element */
+        header h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        /* Style the main content */
+        main {
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-family: 'Lato', sans-serif;
+        }
+
+        /* Style the section elements */
+        section {
+            margin-bottom: 40px;
+            border: 2px solid #839788;
+            padding: 20px;
+        }
+
+        /* Style the h2 elements */
+        section h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        /* Style the p elements */
+        section p {
+            font-size: 18px;
+            color: #000000;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        /* Style the figure elements */
+        section figure {
+            margin-bottom: 20px;
+            border: 2px solid #baa898;
+            padding: 20px;
+        }
+
+        /* Style the img elements */
+        section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Style the figcaption elements */
+        section figcaption {
+            font-size: 14px;
+            color: #999999;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        /* Style images to fit within their container */
+        img {
+            max-width: 100%;
+            height: auto;
+            border: #000000;
+            border-radius: 3px;
+        }
+
+        /* Style embedded YouTube videos */
+        iframe[src^="<https://www.youtube.com>"] {
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+            /* 16:9 aspect ratio */
+            position: relative;
+        }
+
+        /* Style embedded articles */
+        iframe[src^="<https://www.example.com/article>"] {
+            width: 100%;
+            height: 500px;
+        }
+
+        /* Set a maximum width for all content */
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Hide sections by default */
+        .hidden {
+            display: none;
+        }
+
+        /* Set the home page section to display:block initially */
+        #home {
+            display: block;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        /* Style the bulleted list */
+        ul {
+            list-style: disc;
+            margin-left: 30px;
+        }
+
+        /* Style the list items */
+        li {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .mySlides img {
+            vertical-align: middle;
+        }
+
+        /* Caption text */
+        .caption {
+            color: #f2f2f2;
+            font-size: 15px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Powerlifting: The Art of Strength and Performance</h1>
+    </header>
+    <main>
+        <section id="who">
+            <h2>Who We Are</h2>
+            <p>
+                My name is Hunter Starets, and I am a 20-year-old athlete who has been training in strength sports
+                for the past couple years. In late March, I will participate in my first official powerlifting meet.
+                For this meet, I have been focused on optimizing my training to achieve the best possible results
+                since December. As a 90kg athlete with USPA, I was first introduced to powerlifting by my friend
+                Chris, who has already made a name for himself in the sport. Chris offered to coach me for my first
+                meet, and since then, we have continued to work together. My goal is to push myself to see what I am
+                capable of achieving and to continue learning how to improve my performance in powerlifting.
+            </p>
+            <!--UNFINISHED-->
+            <figure>
+                <img src="images/hunter.png" alt="Description of image">
+                <figcaption>Hunter Starets</figcaption>
+            </figure>
+        </section>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Powerlifting is a strength sport that involves lifting the maximum weight possible for three
+                different exercises: squat, bench press, and deadlift. The goal is to achieve the highest total
+                weight lifted across all three exercises, with each lift judged by judges to ensure proper form and
+                technique.
+            </p>
+            <p>
+                I enjoy powerlifting because it challenges me both physically and mentally. It pushes me to see
+                what I am capable of achieving and helps me to stay disciplined and focused. My long-term goal is to
+                achieve a 1500lbs total, which would require significant dedication and hard work. I am excited to
+                continue pushing myself and to learn more about this amazing sport.
+            </p>
+            <!--Code for slideshow below-->
+            <!--UNFINISHED-->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="images/squat.png" style="width:100%" alt="squat">
+                    <div class="caption">Squat</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/bench.png" style="width:100%" alt="bench">
+                    <div class="caption">Bench</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/deadlift.png" style="width:100%" alt="deadlift">
+                    <div class="caption">Deadlift</div>
+                </div>
+            </div>
+
+        </section>
+        <section id="when">
+            <h2>Training Schedule</h2>
+            <p>
+                My powerlifting training involves 5 days a week in the gym. Four of those days are intense and
+                challenge me both physically and mentally, while the fifth day is an easier session to maintain
+                blood flow in my muscles.</p>
+            <p>
+                My coach provides me with a weekly training plan based on my goals for meet day and my performance
+                over the past few weeks. He prescribes different variations of the squat, bench press, and deadlift,
+                along with varying rep ranges, weight ranges, and the number of sets to complete for each exercise
+                on a given day. His knowledge and experience help him to create these customized plans.</p>
+            <p>
+                At the end of each week, we discuss my progress and address any weak points for the following week.
+            </p>
+            <h3>Weekly Training Schedule</h3>
+            <ul>
+                <li><strong>Monday:</strong> Squat, then bench press, then accessories</li>
+                <li><strong>Tuesday:</strong> Deadlift, then bench press, then accessories</li>
+                <li><strong>Wednesday:</strong> Accessory exercises</li>
+                <li><strong>Thursday:</strong> Squat, then accessories</li>
+                <li><strong>Friday:</strong> Deadlift, then bench press, then accessories</li>
+                <li><strong>Saturday and Sunday:</strong> Rest days</li>
+            </ul>
+            <p>
+                I prefer to lift for longer sessions on fewer days per week, rather than lifting heavy six times a
+                week for shorter workouts. Accessories are exercises that are less intensive but help to improve the
+                strength of the muscles required for squatting, bench pressing, and deadlifting.
+            </p>
+            <figure>
+                <img src="images/russel.png" alt="Russel Orhii">
+                <figcaption>Russel Orhii</figcaption>
+            </figure>
+        </section>
+        <section id="where">
+            <h2>Where We Train</h2>
+            <p>
+                I train at Olympus 365, which is a well-equipped gym with a strong sense of community. The
+                powerlifting area features top-of-the-line equipment and the members are very knowledgeable about
+                powerlifting, making it a great environment to learn and grow as an athlete.
+            </p>
+            <h3>Equipment Available</h3>
+            <ul>
+                <li>Three Competition bench/combo racks (two ER Equipment racks, one StrongArm)</li>
+                <li>Two BoS power racks with safety straps and monolift attachment</li>
+                <li>Calibrated Steel Kilo Plates by Eleiko, Rogue, and Vulcan</li>
+                <li>Texas Power Bars, Texas Deadlift Bar, EliteFTS Safety Squat Yoke Bar, multiple specialty bars
+                </li>
+                <li>Bumper Plates, Machined Metal Plates</li>
+                <li>Deadlift Platform with Jacks</li>
+                <li>Resistance Bands, Kettlebells, Liquid Chalk</li>
+                <li>Additional Squat stations available in 24x7 CrossFit room</li>
+            </ul>
+            <p>
+                The gym has a strong sense of community, and I have found that the members are very knowledgeable
+                about powerlifting. As a relatively new athlete, I feel that I can learn something new every day
+                from my interactions with the other members.
+            </p>
+            <figure>
+                <img src="images/gym.jpg" alt="Picture of the gym" width="500">
+                <figcaption>Picture of the gym</figcaption>
+                <img src="images/gym2.jpg" alt="Picture of the gym" width="500">
+                <figcaption>Picture of the gym</figcaption>
+            </figure>
+        </section>
+        <section id="how">
+            <h2>How We Train</h2>
+            <p>
+                The conjugate method is a popular strength training program that involves rotating through
+                different exercises over a period of time. This allows athletes to focus on different muscle
+                groups and develop a well-rounded level of strength. The program typically includes both max
+                effort work (lifting heavy weights for low reps) and dynamic effort work (lifting lighter
+                weights for higher reps at a faster pace).
+            </p>
+            <p>
+                One aspect of the conjugate method is the use of banded and chain work for speed. Bands and
+                chains are used to add resistance to the barbell at the top of the movement where the
+                athlete is strongest. This allows them to work on explosiveness and speed through the entire
+                range of motion. As the bar moves away from the athlete, the resistance from the bands or
+                chains decreases, making it easier to complete the lift. The goal is to use a weight that is
+                challenging but allows the athlete to maintain proper form and perform the lift with speed
+                and explosiveness.</p>
+            <table aria-describedby="training">
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Warm-up</th>
+                        <th>Main Exercises</th>
+                        <th>Accessory Exercises</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Banded TKE 3x25</td>
+                        <td>Squat: 4x4 RPE 7.5
+                            Bench press: 4x3 RPE 7.5</td>
+                        <td>Incline DB bench: 4x9
+                            Heavy RDL DB: 4x10
+                            DB rear delt flys cable: 4x15
+                            Prowler pull: 2 sets light but knee focused</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Banded TKE 3x25</td>
+                        <td>Deadlift: 3x3 RPE 7.5
+                            Banded Bench Press: 8x3 speed</td>
+                        <td>Leg extensions: 4x20
+                            Lat pull downs: 4x13
+                            DB row: 4x6</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Banded TKE 3x25</td>
+                        <td>Squat: 5x4 RPE 8</td>
+                        <td>Leg extensions: 4x20
+                            Good mornings: 4x8
+                            Romanian deadlifts with dumbbells: 4x10
+                            Glute-ham raise: 4x10
+                            Prowler push/pull: 2 sets each</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Banded TKE 3x25</td>
+                        <td>Defecit Deadlift: 7x3 RPE 8
+                            Bench press: 6x4 RPE 8</td>
+                        <td>Lat pull downs: 4x15
+                            Rear delt flys DB: 5x12
+                            Reverse hypers: 4x15-20</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday and Sunday</td>
+                        <td>Rest days</td>
+                        <td>Rest days</td>
+                        <td>Rest days</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--UNFINISHED-->
+            <figure>
+                <img src="images/banded.jpg" alt="Description of image">
+                <figcaption>Caption for image</figcaption>
+            </figure>
+        </section>
+        <section id="why">
+            <h2>Why We Powerlift</h2>
+            <p>
+                Powerlifting is a challenging and rewarding sport that I enjoy because of the physical and mental
+                benefits it provides. It pushes me to constantly improve my strength and technique, and the feeling
+                of accomplishment after a successful lift is unparalleled.
+            </p>
+            <p>
+                I have been inspired by many great athletes in the sport, including my friend Chris who first
+                introduced me to powerlifting. Seeing his dedication and hard work has motivated me to strive for
+                greatness in my own training. Being part of a supportive community of powerlifters has also been a
+                great source of inspiration and motivation for me.
+            </p>
+            <p>
+                Overall, powerlifting has had a positive impact on my life and I am excited to continue pushing
+                myself to see what I am capable of achieving in the sport.
+            </p>
+            <figure>
+                <img src="images/barbells.jpg" alt="Description of image">
+                <figcaption>Caption for image</figcaption>
+            </figure>
+            <iframe title="Article" src="https://www.livestrong.com/article/473350-benefits-of-powerlifting/"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/G9tqQe8ZaCU"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </section>
+    </main>
+    <footer>
+        <p>Designed by <a href="../starets.com/index.html">Starets LLC</a> © 2023</p>
+        <div class="validators">
+            <p>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border: 0; width: 88px; height: 31px"
+                        src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS" />
+                </a>
+            </p>
+            <p>
+                <a href="https://validator.w3.org/check?uri=referer">
+                    <img src="https://www.w3.org/Icons/valid-html401" style="border: 0; width: 88px; height: 31px"
+                        alt="Valid HTML" />
+                </a>
+            </p>
+        </div>
+    </footer>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 10000); // Change image every 2 seconds
+        }
+    </script>
+    <script>
+        // Add a click event listener to each section's h2 element
+        const sections = document.querySelectorAll('section');
+        sections.forEach((section) => {
+            const h2 = section.querySelector('h2');
+            h2.addEventListener('click', () => {
+                // Toggle the hidden class for the section
+                section.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+
+</html>

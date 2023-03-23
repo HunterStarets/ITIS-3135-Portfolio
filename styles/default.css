@@ -25,7 +25,7 @@ main {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
-  max-width: 1000px;
+  width: 90%;
 }
 
 main h1 {
@@ -97,3 +97,62 @@ button {
   font-size: 14px;
   margin-right: 10px;
 }
+
+footer p {
+  margin-top: 15px;
+}
+
+.header-container {
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.logo-container {
+  background-color: #f9f9f9;
+  border-bottom: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 95%;
+  margin: 0 auto; 
+}
+
+#header-top-nav {
+  background-color: #f9f9f9;
+  border-bottom: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+#header-top-nav a {
+  font-weight: 400;
+  color: #333;
+  text-decoration: none;
+}
+
+#header-bot-nav {
+  text-align: center;
+  background-color: #333;
+  border-top: 2px solid #f9f9f9;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#header-bot-nav a {
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+}
+
+#header-top-nav a:hover {
+  color: #216869;
+}
+#header-bot-nav a:hover {
+  color: #13aaac;
+}
+
