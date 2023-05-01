@@ -7,8 +7,8 @@ document.getElementById("commonFooter").innerHTML =
   '<a href="https://www.linkedin.com/in/hunterstarets">LinkedIn</a>' +
   '<a href="">HTML/CSS Certification</a><a href="">JS Certification</a>' +
   "</nav>" +
-  "<br />" +
-  '<p>Designed by <a href="starets.com/">Starets LLC</a> ©2023</p>' +
-  "<br />" +
   '<a href="https://validator.w3.org/check?uri=referer"> <img src="images/html.png" style="border: 0; width: 88px; height: 31px" alt="Valid HTML" /> </a>' +
-  '<a href="https://jigsaw.w3.org/css-validator/check/referer"> <img src="images/css.png" style="border: 0; width: 88px; height: 31px" alt="Valid CSS" /> </a>';
+  '<a href="https://jigsaw.w3.org/css-validator/check/referer"> <img src="images/css.png" style="border: 0; width: 88px; height: 31px" alt="Valid CSS" /> </a>' +
+  "<br />" +
+  "<br />" +
+  '<p>Designed by <a href="starets.com/">Starets LLC</a> ©2023</p>';
