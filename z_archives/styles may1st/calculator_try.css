@@ -1,0 +1,22 @@
+.calculator__display {
+  border-radius: 3px 3px 3px 3px;
+  background: white;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.calculator__keys {
+  margin: auto;
+  padding: 20px;
+}
+
+.key--operator {
+  margin: 5px;
+}
+
+.calculator {
+  background: gray;
+  width: 300px;
+  margin: auto;
+  border-radius: 3px 3px 3px 3px;
+}

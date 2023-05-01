@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>ITIS 3135 | Hunter Starets's Homicidal Seal | Calculator FCC</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/default.css" />
+  <link rel="stylesheet" href="styles/calculator_try.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <h1>ITIS 3135 | Hunter Starets's Homicidal Seal</h1>
+      </div>
+      <div id="navigation-bar">
+        <nav id="header-top-nav" aria-label="header-top-nav"></nav>
+        <nav id="header-bot-nav" aria-label="header-bot-nav"></nav>
+      </div>
+      <script src="scripts/header.js"></script>
+    </div>
+  </header>
+  <main>
+    <div class="calculator">
+      <div class="calculator__display">0</div>
+      <div class="calculator__keys">
+        <button id="add" class="key--operator" data-action="add">+</button>
+        <button id="subtract" class="key--operator" data-action="subtract">-</button>
+        <button id="multiply" class="key--operator" data-action="multiply">&times;</button>
+        <button id="divide" class="key--operator" data-action="divide">÷</button>
+
+        <button id="7" class="key--operator">7</button>
+        <button id="8" class="key--operator">8</button>
+        <button id="9" class="key--operator">9</button>
+        <button id="4" class="key--operator">4</button>
+        <button id="5" class="key--operator">5</button>
+        <button id="6" class="key--operator">6</button>
+        <button id="1" class="key--operator">1</button>
+        <button id="2" class="key--operator">2</button>
+        <button id="3" class="key--operator">3</button>
+        <button id="0" class="key--operator">0</button>
+
+        <button data-action="decimal" class="key--operator">.</button>
+
+        <button id="equals" class="key--operator" data-action="calculate">=</button>
+        <button id="clear" class="key--operator" data-action="clear">AC</button>
+      </div>
+    </div>
+
+  </main>
+  <footer id="commonFooter"></footer>
+  <script src="scripts/footer.js"></script>
+  <script src="scripts/calculator-fcc.js"></script>
+</body>
+
+</html>

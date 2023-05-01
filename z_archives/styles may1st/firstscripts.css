@@ -1,0 +1,104 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+nav a {
+  display: inline-block;
+  margin-right: 20px;
+  font-weight: 400;
+  color: #333;
+  text-decoration: none;
+}
+
+main {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+main h1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+}
+
+figure {
+  text-align: center;
+}
+
+figure img {
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+figure figcaption {
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.tab {
+  margin-left: 40px;
+}
+
+.section {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input,
+select {
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid gray;
+}
+
+.functionOutputs {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+#imageOutput {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+#scripts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

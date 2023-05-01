@@ -18,27 +18,12 @@
         <h1>ITIS 3135 | Hunter Starets's Homicidal Seal</h1>
       </div>
       <div id="navigation-bar">
-        <nav id="header-top-nav" aria-label="header-top-nav">
-          <a href="index.html">Home</a>
-          <a href="contract.html">Contract</a>
-          <a href="tables.html">Tables</a>
-          <a href="form.html">Form</a>
-          <a href="website_evaluations.html">Website Evaluations</a>
-          <a href="firstscripts.html">First Scripts</a>
-          <a href="polygons.html">Polygons</a>
-          <a href="calculator_try.html">Calculator Try</a>
-          <a href="calculator_fcc.html">Calculator FCC</a>
-          <a href="arrays.html">Arrays</a>
-          <a href="slideshow.html">Slideshow</a>
-          <a href="project1.html">Project 1</a>
-        </nav>
-        <nav id="header-bot-nav" aria-label="header-bot-nav">
-          <a href="">CRAPPYWebPAGE</a>
-          <a href="Exercise/Starets-Activity_Accessibility.html">Accessibility</a>
-        </nav>
+        <nav id="header-top-nav" aria-label="header-top-nav"></nav>
+        <nav id="header-bot-nav" aria-label="header-bot-nav"></nav>
       </div>
     </div>
   </header>
+  <script src="scripts/header.js"></script>
   <main>
     <h2>Polygons</h2>
     <form>
@@ -54,32 +39,8 @@
       </p>
     </div>
   </main>
-  <footer>
-    <script>
-      function validateHTML() {
-        var currentURL = encodeURIComponent(window.location.href);
-        var validatorURL = "https://validator.w3.org/nu/?doc=" + currentURL;
-        window.open(validatorURL, "_blank");
-      }
-      function validateCSS() {
-        var currentURL = encodeURIComponent(window.location.href);
-        var validatorURL =
-          "https://jigsaw.w3.org/css-validator/validator?uri=" +
-          currentURL +
-          "&profile=css3";
-        window.open(validatorURL, "_blank");
-      }
-    </script>
-    <div>
-      <a href="#" onclick="validateHTML()">
-        <img src="https://www.w3.org/Icons/valid-html401" alt="Valid HTML" height="31" width="88" />
-      </a>
-      <a href="#" onclick="validateCSS()">
-        <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS" height="31" width="88" />
-      </a>
-    </div>
-    <p>Designed by <a href="starets.com/">Starets LLC</a> © 2023</p>
-  </footer>
+  <footer id="commonFooter"></footer>
+  <script src="scripts/footer.js"></script>
 </body>
 
 </html>

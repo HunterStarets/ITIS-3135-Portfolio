@@ -1,0 +1,46 @@
+/*https://coolors.co/1f2421-216869-49a078-9cc5a1-dce1de*/
+body {
+  background-color: #dce1de;
+  padding: 0;
+  margin: 0;
+  font-family: "Karla", sans-serif;
+}
+
+header {
+  background-color: #1f2421;
+  color: #dce1de;
+  padding: 20px;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+nav a {
+  margin-right: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #dce1de;
+}
+.icon {
+  height: 800px;
+  width: 20px;
+}
+nav a:hover {
+  color: #216869;
+}
+ul {
+  list-style-type: square;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer p {
+  font-size: 12px;
+  color: #999;
+  margin: 0;
+}
