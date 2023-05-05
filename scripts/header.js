@@ -50,6 +50,10 @@ const topLinks = {
     url: "slideshow.html",
     text: "Slideshow",
   },
+  13: {
+    url: "project_1.html",
+    text: "Project 1",
+  },
 };
 
 const bottomLinks = {

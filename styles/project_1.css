@@ -1,0 +1,9 @@
+figcaption {
+  text-align: center;
+}
+
+figcaption,
+summary,
+dt {
+  font-weight: bold;
+}

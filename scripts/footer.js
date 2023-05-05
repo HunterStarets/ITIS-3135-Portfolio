@@ -11,4 +11,5 @@ document.getElementById("commonFooter").innerHTML =
   '<a href="https://jigsaw.w3.org/css-validator/check/referer"> <img src="images/css.png" style="border: 0; width: 88px; height: 31px" alt="Valid CSS" /> </a>' +
   "<br />" +
   "<br />" +
+  "<br />" +
   '<p>Designed by <a href="starets.com/">Starets LLC</a> ©2023</p>';
