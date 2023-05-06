@@ -1,6 +1,6 @@
 $(document).ready(function () {
   var url =
-    "https://www.flickr.com/services/feeds/photos_public.gne?id=82407828@N07&tags=vectacorpbuilding&format=json&jsoncallback=?";
+    "https://www.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=04b448c8281d0504074e97152759ade5&photoset_id=72177720308054139&format=json&nojsoncallback=1";
   $.getJSON(url, function (data) {
     var html = "";
     $.each(data.items, function (i, item) {

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rugby Club | Events</title>
+
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/events.css">
+
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="images/white-logo.png" alt="logo">
+                <h1>Rugby Club</h1>
+            </div>
+            <div id="navigation-bar">
+                <nav id="header-top-nav" aria-label="header-top-nav"></nav>
+            </div>
+        </div>
+    </header>
+    <script src="scripts/header.js"></script>
+
+    <main>
+        <div class="hero-banner" style="background-image: url('./images/banner-5.png');">
+            <h2>Upcoming Events</h2>
+        </div>
+
+        <div id="eventsContainer"></div>
+
+        <div id="eventModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modalTitle"></h2>
+                <p id="modalDate"></p>
+                <p id="modalDescription"></p>
+                <button>Add to Google Calendar</button>
+            </div>
+        </div>
+
+
+    </main>
+    <script src="scripts/events.js"></script>
+
+    <footer>
+        <p>&copy; 2023 UNCC Rugby Club. All rights reserved.</p>
+    </footer>
+
+
+
+</body>
+
+</html>
