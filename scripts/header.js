@@ -90,7 +90,7 @@ const bottomLinks = {
     text: "Flickr Photo Gallery",
   },
   9: {
-    url: "",
+    url: "clientproject/index.html",
     text: "Client Project",
   },
   10: {
