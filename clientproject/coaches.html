@@ -7,6 +7,10 @@
     <title>Rugby Club | Meet the Coaches</title>
     <link rel="stylesheet" href="styles/default.css">
     <link rel="stylesheet" href="styles/coaches.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </head>
 
 <body>
@@ -30,27 +34,33 @@
 
         <div class="coaches-container">
             <div class="coach-card">
-                <img src="./images/john.jpg" alt="John Brown" />
+                <a href="/images/john.jpg" data-lightbox="coaches-gallery" data-title="John Brown">
+                    <img src="./images/john.jpg" alt="John Brown" />
+                </a>
                 <h3>John Brown</h3>
                 <p>John is an experienced rugby coach and player who joined the UNCC rugby team in 2011 after
                     a successful career in England. With over 15 years of experience coaching rugby, including at
                     high-performance levels, he brings a wealth of knowledge and expertise to the team.</p>
             </div>
             <div class="coach-card">
-                <img src="./images/johno.jpg" alt="Johno Basnett" />
+                <a href="/images/johno.jpg" data-lightbox="coaches-gallery" data-title="Johno Basnett">
+                    <img src="./images/johno.jpg" alt="Johno Basnett" />
+                </a>
                 <h3>Johno Basnett</h3>
                 <p>Johno Basnette is a highly skilled and experienced rugby coach who has been coaching the UNCC rugby
                     team since 2018. With a background in playing and coaching rugby at various levels in South Africa
                     and the USA, he brings a wealth of knowledge and expertise to the team.</p>
             </div>
             <div class="coach-card">
-                <img src="./images/rob.jpeg" alt="Robert" />
+                <a href="/images/rob.jpeg" data-lightbox="coaches-gallery" data-title="Robert McCachren">
+                    <img src="./images/rob.jpeg" alt="Robert McCachren" />
+                </a>
                 <h3>Robert McCachren</h3>
                 <p>Robert McCachren is a dedicated and experienced rugby coach who has been coaching the UNCC rugby team
                     since 2022. With a background in playing and coaching rugby at various levels, including collegiate
                     and international competitions, Robert brings a wealth of knowledge and expertise to the team. His
-                    passion for the sport and commitment to excellence have helped the team achieve significant success
-                    on and off the field..</p>
+                    passion for the sport and commitment to excellence </p>
+
             </div>
         </div>
     </main>
