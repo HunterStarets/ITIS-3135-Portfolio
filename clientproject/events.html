@@ -12,29 +12,29 @@
 </head>
 
 <body>
-    <header id="main-header">
+    <header id="main-header" role="banner">
         <div class="header-container">
             <div class="logo-container">
-                <img src="images/white-logo.png" alt="logo">
+                <img src="images/white-logo.png" alt="Rugby Club logo">
                 <h1>Rugby Club</h1>
             </div>
             <div id="navigation-bar">
-                <nav id="header-top-nav" aria-label="header-top-nav"></nav>
+                <nav id="header-top-nav" aria-label="Main Navigation"></nav>
             </div>
         </div>
     </header>
     <script src="scripts/header.js"></script>
 
-    <main>
+    <main role="main">
         <div class="hero-banner" style="background-image: url('./images/banner-5.png');">
             <h2>Upcoming Events</h2>
         </div>
 
-        <div id="eventsContainer"></div>
+        <div id="eventsContainer" aria-live="polite"></div>
 
-        <div id="eventModal" class="modal">
+        <div id="eventModal" class="modal" aria-hidden="true">
             <div class="modal-content">
-                <span class="close">&times;</span>
+                <span class="close" role="button" tabindex="0" aria-label="Close event details">&times;</span>
                 <h2 id="modalTitle"></h2>
                 <p id="modalDate"></p>
                 <p id="modalDescription"></p>
@@ -42,16 +42,14 @@
             </div>
         </div>
 
-
     </main>
-    <script src="scripts/events.js"></script>
 
-    <footer>
+
+    <footer role="contentinfo">
         <p>&copy; 2023 UNCC Rugby Club. All rights reserved.</p>
     </footer>
-
-
-
+    <script src="scripts/accessibility.js"></script>
+    <script src="scripts/events.js"></script>
 </body>
 
 </html>
