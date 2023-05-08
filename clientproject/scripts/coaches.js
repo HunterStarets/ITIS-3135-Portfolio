@@ -1,41 +1,36 @@
-const coachesContainer = document.getElementById("coaches-container");
+$(document).ready(function () {
+  fetchCoaches();
 
-fetch("data/coaches.json")
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    return response.json();
-  })
-  .then((data) => {
-    data.forEach((coach) => {
-      const coachCard = document.createElement("div");
-      coachCard.className = "coach-card";
-
-      const coachImg = document.createElement("img");
-      coachImg.src = coach.image;
-      coachImg.alt = coach.name;
-
-      const coachInfo = document.createElement("div");
-      coachInfo.className = "coach-info";
-
-      const coachName = document.createElement("h2");
-      coachName.textContent = coach.name;
-
-      const coachTitle = document.createElement("h3");
-      coachTitle.textContent = coach.title;
-
-      const coachBio = document.createElement("p");
-      coachBio.textContent = coach.bio;
-
-      coachInfo.appendChild(coachName);
-      coachInfo.appendChild(coachTitle);
-      coachInfo.appendChild(coachBio);
-
-      coachCard.appendChild(coachImg);
-      coachCard.appendChild(coachInfo);
-
-      coachesContainer.appendChild(coachCard);
+  function fetchCoaches() {
+    $.ajax({
+      url: "./data/coaches.json",
+      type: "GET",
+      dataType: "json",
+      success: function (data) {
+        displayCoaches(data);
+      },
+      error: function () {
+        console.error("Failed to fetch coach data");
+      },
     });
-  })
-  .catch((error) => console.error(error));
+  }
+
+  function displayCoaches(coaches) {
+    const container = $("#coaches-container");
+    coaches.forEach(function (coach) {
+      const coachCard = `
+              <div class="coach-card">
+                  <a href="${coach.image}" data-lightbox="coaches-gallery" data-title="${coach.name}">
+                      <img src="${coach.image}" alt="${coach.name}" />
+                  </a>
+                  <h3>${coach.name}</h3>
+                  <p>${coach.description}</p>
+              </div>
+          `;
+      container.append(coachCard);
+    });
+
+    // Re-initialize Lightbox after adding coach cards dynamically
+    lightbox.init();
+  }
+});

@@ -1,20 +1,17 @@
 [
   {
-    "name": "Coach Name #1",
-    "title": "Head Coach",
-    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor augue vitae pharetra elementum. Integer vel convallis justo. Ut sit amet sapien vel ipsum pulvinar dapibus id id eros. Nunc facilisis commodo urna sed interdum. ",
-    "image": "images/coach-1.jpg"
+      "name": "John Brown",
+      "image": "./images/john.jpg",
+      "description": "John is an experienced rugby coach and player who joined the UNCC rugby team in 2011 after a successful career in England. With over 15 years of experience coaching rugby, including at high-performance levels, he brings a wealth of knowledge and expertise to the team."
   },
   {
-    "name": "Coach Name #2",
-    "title": "Assistant Coach",
-    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor augue vitae pharetra elementum. Integer vel convallis justo. Ut sit amet sapien vel ipsum pulvinar dapibus id id eros. Nunc facilisis commodo urna sed interdum. ",
-    "image": "images/coach-2.jpg"
+      "name": "Johno Basnett",
+      "image": "./images/johno.jpg",
+      "description": "Johno Basnette is a highly skilled and experienced rugby coach who has been coaching the UNCC rugby team since 2018. With a background in playing and coaching rugby at various levels in South Africa and the USA, he brings a wealth of knowledge and expertise to the team."
   },
   {
-    "name": "Coach Name #3",
-    "title": "Fitness Coach",
-    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor augue vitae pharetra elementum. Integer vel convallis justo. Ut sit amet sapien vel ipsum pulvinar dapibus id id eros. Nunc facilisis commodo urna sed interdum. ",
-    "image": "images/coach-3.jpg"
+      "name": "Robert McCachren",
+      "image": "./images/rob.jpeg",
+      "description": "Robert McCachren is a dedicated and experienced rugby coach who has been coaching the UNCC rugby team since 2022. With a background in playing and coaching rugby at various levels, including collegiate and international competitions, Robert brings a wealth of knowledge and expertise to the team. His passion for the sport and commitment to excellence have helped the team achieve significant success on and off the field."
   }
 ]
